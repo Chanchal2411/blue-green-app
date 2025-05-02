@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "jenkins_server" {
   ami           = "ami-0c2b8ca1dad447f8a" # Use correct Ubuntu AMI for your region
   instance_type = "t2.medium"
-  key_name      = "your-key-name"
+  key_name      = "MyPinkKey"
   tags = {
     Name = "Jenkins-Server"
   }
